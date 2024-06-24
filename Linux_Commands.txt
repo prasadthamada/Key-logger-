@@ -1,0 +1,93 @@
+Navigation Commands
+  Change Directory
+      cd <folder_name>: Changes the current directory to the specified folder.
+      cd ..: Moves one step back to the parent directory.
+      cd: Exits the current session (this can vary depending on the shell).
+
+
+Clear Screen
+     ctrl+L: Clears the terminal screen.
+
+
+Directory Management
+
+   Create Directory
+    mkdir <folder_name>: Creates a new directory with the specified name.
+
+Remove Directory
+   rmdir <folder_name>: Removes an empty directory.
+   rm -r <folder_name>: Removes a directory and all its contents recursively.
+
+Package Management
+  Install a Package
+  sudo apt-get install leafpad: Installs the Leafpad text editor.
+
+
+Example Usage:
+   leafpad <file_name.ext>: Opens a file with Leafpad (e.g., leafpad Game.py, leafpad note.txt).
+   File and Directory Listing
+
+List Files
+   ls: Lists files and directories in the current directory in alphabetical order.
+   ls -a: Lists all files, including hidden files.
+   ls -laS: Lists detailed information for all files, sorted by file size in descending order.
+Incorrect Syntax Example
+   ls *.etc | ls *.py: Attempts to list files with the .etc extension and then pass their output to list files with the .py extension, which might not work as intended.
+
+
+File Management
+
+   Remove File
+   rm <file_name>: Removes the specified file.
+
+Display File Contents
+   cat <file_name>: Displays the contents of the specified file.
+Print Working Directory
+    pwd: Prints the present working directory.
+
+Copy and Move Files
+    cp <source> <destination>: Copies a file from the source to the destination.
+     mv <source> <destination>: Moves a file from the source to the destination (cut and paste).
+
+
+User Management
+
+   Root Access
+      sudo su: Switches to the root user.
+      sudo -i: Also switches to the root user.
+
+Grep Command
+     grep -i est cars.txt: Searches for the string "est" in cars.txt, ignoring case.
+
+Echo Command
+     echo $x: Displays the value of the variable x.
+
+Add and Delete Users
+    sudo adduser username: Adds a new user.
+    sudo deluser username: Deletes an existing user.
+
+Switch User
+    su username: Switches to the specified user.
+    passwd: Changes the password for the current user.
+    exit: Exits the current user session.
+
+
+Service Management on Linux Servers
+
+    Apache Service Commands
+    service apache2 start: Starts the Apache web server.
+    service apache2 status: Displays the status of the Apache web server.
+    service apache2 stop: Stops the Apache web server.
+    Hosting a Webpage Using Apache Server
+    Start Apache: service apache2 start.
+    Navigate to /var/www/html.
+    Add an index.html file with basic HTML content.
+    Open the terminal and type ifconfig to get the local IP address.
+    Enter the local IP address in a web browser to view the hosted webpage.
+Project Setup
+
+
+Python Package Installation
+
+    pip install pynput: Installs the pynput library.
+    pip install jsonlib: Installs the jsonlib library.
